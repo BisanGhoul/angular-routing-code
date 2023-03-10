@@ -4,8 +4,7 @@
       <ul class="nav nav-tabs">
         <!-- this will attach the "active" class to the element when it is selected -->
         <li role="presentation"
-         routerLinkActive="active"
-         [routerLinkActiveOptions]="{exact: true}" >
+         routerLinkActive="active" >
         <a routerLink="/servers">Servers</a></li>
         
         <li role="presentation"
@@ -13,7 +12,8 @@
        <a [routerLink]="['/users']">Users</a></li>
        
          <li role="presentation"
-         routerLinkActive="active">
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{exact: true}">
          <a routerLink="/">Home</a></li>
       </ul>
     </div>
