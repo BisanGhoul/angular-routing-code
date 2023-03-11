@@ -18,7 +18,7 @@ export class ServerComponent implements OnInit {
     //convert id to a number
     this.server = this.serversService.getServer(+this.route.snapshot.params['id']);
     this.route.params.subscribe(
-      (params: Params) => {this.serversService.getServer(+params['id'])
+      (params: Params) => {this.server=this.serversService.getServer(+params['id'])
   });
   }
 
